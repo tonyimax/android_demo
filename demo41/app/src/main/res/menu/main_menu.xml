@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 主菜单项1 -->
+    <item
+        android:id="@+id/menu_new"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="新建"
+        app:showAsAction="ifRoom|withText">
+
+        <!-- 子菜单1 -->
+        <menu>
+            <item
+                android:id="@+id/submenu_new_file"
+                android:title="文件" />
+            <item
+                android:id="@+id/submenu_new_folder"
+                android:title="文件夹" />
+            <item
+                android:id="@+id/submenu_new_project"
+                android:title="项目" />
+        </menu>
+    </item>
+
+    <!-- 主菜单项2 -->
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="编辑"
+        app:showAsAction="ifRoom|withText">
+
+        <!-- 子菜单2 -->
+        <menu>
+            <item
+                android:id="@+id/submenu_edit_copy"
+                android:title="复制" />
+            <item
+                android:id="@+id/submenu_edit_paste"
+                android:title="粘贴" />
+            <group android:id="@+id/group_advanced">
+                <item
+                    android:id="@+id/submenu_edit_find"
+                    android:title="查找" />
+                <item
+                    android:id="@+id/submenu_edit_replace"
+                    android:title="替换" />
+            </group>
+        </menu>
+    </item>
+
+    <!-- 主菜单项3 (总是显示在溢出菜单中) -->
+    <item
+        android:id="@+id/menu_settings"
+        android:title="设置"
+        app:showAsAction="never" />
+
+    <!-- 主菜单项4 (带单选框的组) -->
+    <group
+        android:id="@+id/menu_view_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_view_list"
+            android:title="列表视图" />
+        <item
+            android:id="@+id/menu_view_grid"
+            android:checked="true"
+            android:title="网格视图" />
+        <item
+            android:id="@+id/menu_view_details"
+            android:title="详细视图" />
+    </group>
+
+    <!-- 主菜单项5 (带复选框) -->
+    <item
+        android:id="@+id/menu_show_toolbar"
+        android:checkable="true"
+        android:checked="true"
+        android:title="显示工具栏" />
+
+    <!-- 主菜单项6 (带自定义图标) -->
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="帮助" />
+
+    <!-- 主菜单项7 -->
+    <item
+        android:id="@+id/menu_about"
+        android:title="关于" />
+
+</menu>

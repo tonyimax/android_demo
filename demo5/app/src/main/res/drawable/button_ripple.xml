@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/background_color"> <!-- 波纹颜色 -->
+
+    <!-- 按钮的实际背景 -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="#2196F3" /> <!-- 按钮的背景颜色 -->
+            <corners android:radius="16dp" /> <!-- 圆角效果 -->
+        </shape>
+    </item>
+
+</ripple>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- 主色调 -->
+    <color name="primary">#6750A4</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#EADDFF</color>
+
+    <!-- 背景色 -->
+    <color name="background">#FFFBFE</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#E7E0EC</color>
+
+    <!-- 文本颜色 -->
+    <color name="primary_text">#1C1B1F</color>
+    <color name="secondary_text">#49454F</color>
+    <color name="hint_text">#79747E</color>
+
+    <!-- 图标颜色 -->
+    <color name="primary_icon">#49454F</color>
+    <color name="secondary_icon">#CAC4D0</color>
+
+    <!-- 状态颜色 -->
+    <color name="success">#4CAF50</color>
+    <color name="outline">#79747E</color>
+    <color name="ripple_color">#1F1F1F</color>
+
+    <!-- 自定义颜色 -->
+    <color name="primary_dark">#FF534BC2</color>
+    <color name="accent">#FFFF6B6B</color>
+    <color name="dropdown_text">#FF4A5568</color>
+    <color name="divider">#1A000000</color>
+</resources>

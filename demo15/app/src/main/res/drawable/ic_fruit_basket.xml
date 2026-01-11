@@ -1,0 +1,85 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- 篮子的手柄 -->
+    <path
+        android:pathData="M40,30 Q60,15 80,30"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="4"
+        android:fillColor="#00000000" />
+
+    <!-- 篮子主体 -->
+    <path
+        android:pathData="M30,40 L30,70 C30,75 35,80 40,80 L80,80 C85,80 90,75 90,70 L90,40 Z"
+        android:fillColor="#A1887F"
+        android:strokeColor="#6D4C41"
+        android:strokeWidth="2" />
+
+    <!-- 篮子纹理线 -->
+    <path
+        android:pathData="M35,45 L85,45"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M35,55 L85,55"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1" />
+    <path
+        android:pathData="M35,65 L85,65"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1" />
+
+    <!-- 苹果 -->
+    <path
+        android:pathData="M45,35 C45,30 50,25 55,25 C60,25 65,30 65,35 C65,40 60,45 55,45 C50,45 45,40 45,35 Z"
+        android:fillColor="#FF5252" />
+    <path
+        android:pathData="M55,20 L55,25"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2" />
+
+    <!-- 橙子 -->
+    <path
+        android:pathData="M70,50 C70,45 75,40 80,40 C85,40 90,45 90,50 C90,55 85,60 80,60 C75,60 70,55 70,50 Z"
+        android:fillColor="#FF9800" />
+    <path
+        android:pathData="M80,35 L80,40"
+        android:strokeColor="#8D6E63"
+        android:strokeWidth="1" />
+
+    <!-- 葡萄 -->
+    <path
+        android:pathData="M35,50 C35,48 36,46 38,46 C40,46 41,48 41,50 C41,52 40,54 38,54 C36,54 35,52 35,50 Z"
+        android:fillColor="#8E24AA" />
+    <path
+        android:pathData="M38,54 C38,56 36,58 34,58 C32,58 30,56 30,54 C30,52 32,50 34,50 C36,50 38,52 38,54 Z"
+        android:fillColor="#8E24AA" />
+    <path
+        android:pathData="M42,52 C42,54 40,56 38,56 C36,56 34,54 34,52 C34,50 36,48 38,48 C40,48 42,50 42,52 Z"
+        android:fillColor="#8E24AA" />
+
+    <!-- 香蕉 -->
+    <path
+        android:pathData="M50,60 C55,58 60,62 62,67 C64,72 62,77 57,79 C52,81 47,77 45,72 C43,67 45,62 50,60 Z"
+        android:fillColor="#FFD54F" />
+
+    <!-- 草莓 -->
+    <path
+        android:pathData="M75,65 C75,62 78,60 81,60 C84,60 87,62 87,65 C87,68 84,70 81,70 C78,70 75,68 75,65 Z"
+        android:fillColor="#FF6B6B" />
+    <path
+        android:pathData="M81,60 L81,55"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2" />
+
+    <!-- 叶子装饰 -->
+    <path
+        android:pathData="M55,20 C52,18 50,15 52,12 C54,9 58,10 60,13"
+        android:strokeColor="#4CAF50"
+        android:strokeWidth="2"
+        android:fillColor="#00000000" />
+
+</vector>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下状态 -->
+    <item android:state_pressed="true">
+        <!-- 波纹效果（API 21+） -->
+        <ripple android:color="?android:attr/colorControlHighlight">
+            <!-- 背景色 -->
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#E3F2FD" /> <!-- 浅蓝色 -->
+                </shape>
+            </item>
+        </ripple>
+    </item>
+
+    <!-- 选中状态 -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#F5F5F5" /> <!-- 浅灰色 -->
+            <!-- 左边框高亮 -->
+            <stroke
+                android:width="4dp"
+                android:color="#2196F3" /> <!-- 蓝色 -->
+            <padding android:left="4dp" />
+        </shape>
+    </item>
+
+    <!-- 激活状态 -->
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#F5F5F5" /> <!-- 浅灰色 -->
+            <!-- 左边框高亮 -->
+            <stroke
+                android:width="4dp"
+                android:color="#4CAF50" /> <!-- 绿色 -->
+            <padding android:left="4dp" />
+        </shape>
+    </item>
+
+    <!-- 焦点状态 -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFF9C4" /> <!-- 浅黄色 -->
+            <stroke
+                android:width="2dp"
+                android:color="#FFC107" /> <!-- 橙色 -->
+        </shape>
+    </item>
+
+    <!-- 启用状态（默认状态） -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#E8F4FD</color>         <!-- 整体背景 -->
+    <color name="card_background">#FFFFFF</color>          <!-- 中间白框 -->
+    <color name="primary_text">#2196F3</color>            <!-- 按钮/标题文字 -->
+    <color name="input_text">#000000</color>              <!-- 输入框文字 -->
+    <color name="input_hint">#888888</color>              <!-- 输入框 hint -->
+    <color name="button_text">#FFFFFF</color>             <!-- 按钮文字 -->
+</resources>

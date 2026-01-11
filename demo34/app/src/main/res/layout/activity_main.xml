@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ScrollView 示例"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ScrollView 只能包含一个直接子视图 -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <!-- 垂直方向的 LinearLayout 作为 ScrollView 的直接子视图 -->
+            <LinearLayout
+                android:id="@+id/scrollContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 示例：多个 TextView 以展示滚动效果 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第 1 项"
+                    android:textSize="18sp"
+                    android:padding="16dp"
+                    android:background="#E3F2FD"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第 2 项"
+                    android:textSize="18sp"
+                    android:padding="16dp"
+                    android:background="#F3E5F5"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第 3 项"
+                    android:textSize="18sp"
+                    android:padding="16dp"
+                    android:background="#E8F5E9"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- 添加更多项目以创建滚动效果 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第 4 项"
+                    android:textSize="18sp"
+                    android:padding="16dp"
+                    android:background="#FFF3E0"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第 5 项"
+                    android:textSize="18sp"
+                    android:padding="16dp"
+                    android:background="#FCE4EC"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="动态添加新项目"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnScrollToBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="滚动到底部"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnScrollToTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="滚动到顶部"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- 添加一个很长的文本以展示滚动 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这是一个很长的文本，用于演示 ScrollView 的滚动功能。当内容超出屏幕高度时，ScrollView 会自动提供滚动条。\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    android:background="#F5F5F5"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- 添加更多内容 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@android:drawable/ic_dialog_info"
+                    android:scaleType="centerCrop"
+                    android:background="#BBDEFB"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="更多内容..."
+                    android:textSize="18sp"
+                    android:padding="16dp"
+                    android:background="#C8E6C9"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/tvLastItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="最后一项"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:background="#FFECB3"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

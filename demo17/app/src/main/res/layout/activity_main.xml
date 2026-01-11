@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 图片轮播部分 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片轮播展示"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <AdapterViewFlipper
+                        android:id="@+id/imageFlipper"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="#f0f0f0"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnPrevImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="上一个"
+                            android:paddingHorizontal="16dp"
+                            android:backgroundTint="#4CAF50"/>
+
+                        <Button
+                            android:id="@+id/btnNextImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="下一个"
+                            android:paddingHorizontal="16dp"
+                            android:layout_marginStart="12dp"
+                            android:backgroundTint="#2196F3"/>
+
+                        <Button
+                            android:id="@+id/btnToggleImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="暂停播放"
+                            android:paddingHorizontal="16dp"
+                            android:layout_marginStart="12dp"
+                            android:backgroundTint="#FF9800"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 新闻轮播部分 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新闻轮播展示"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <AdapterViewFlipper
+                        android:id="@+id/newsFlipper"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnPrevNews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="上一个"
+                            android:paddingHorizontal="16dp"
+                            android:backgroundTint="#4CAF50"/>
+
+                        <Button
+                            android:id="@+id/btnNextNews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="下一个"
+                            android:paddingHorizontal="16dp"
+                            android:layout_marginStart="12dp"
+                            android:backgroundTint="#2196F3"/>
+
+                        <Button
+                            android:id="@+id/btnToggleNews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="暂停播放"
+                            android:paddingHorizontal="16dp"
+                            android:layout_marginStart="12dp"
+                            android:backgroundTint="#FF9800"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 使用说明 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="使用说明：\n1. 点击卡片查看详情\n2. 使用按钮手动控制\n3. 自动轮播可暂停"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:background="#E3F2FD"
+                android:lineSpacingExtra="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ProgressDialog 示例"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- 圆形进度条按钮 -->
+            <Button
+                android:id="@+id/btn_spinner_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. 圆形进度条示例"
+                android:layout_marginBottom="12dp"
+                android:padding="16dp"
+                android:background="@color/purple_500"
+                android:textColor="@android:color/white"/>
+
+            <!-- 水平进度条按钮 -->
+            <Button
+                android:id="@+id/btn_horizontal_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. 水平进度条示例"
+                android:layout_marginBottom="12dp"
+                android:padding="16dp"
+                android:background="@color/teal_700"
+                android:textColor="@android:color/white"/>
+
+            <!-- 可取消进度条按钮 -->
+            <Button
+                android:id="@+id/btn_cancelable_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. 可取消进度条示例"
+                android:layout_marginBottom="12dp"
+                android:padding="16dp"
+                android:background="@color/green_700"
+                android:textColor="@android:color/white"/>
+
+            <!-- 现代替代方案按钮 -->
+            <Button
+                android:id="@+id/btn_modern_alternative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. 现代替代方案示例"
+                android:layout_marginBottom="12dp"
+                android:padding="16dp"
+                android:background="@color/orange_700"
+                android:textColor="@android:color/white"/>
+
+            <!-- 带按钮进度条按钮 -->
+            <Button
+                android:id="@+id/btn_with_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. 带按钮进度条示例"
+                android:layout_marginBottom="12dp"
+                android:padding="16dp"
+                android:background="@color/deep_purple_700"
+                android:textColor="@android:color/white"/>
+
+            <!-- 说明文本 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注意：ProgressDialog 在 API 26 及以上版本已弃用，建议使用 ProgressBar 替代"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:background="@android:color/holo_orange_light"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

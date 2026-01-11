@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 搜索菜单项（显示在ActionBar上） -->
+    <item
+        android:id="@+id/action_search"
+        android:title="搜索"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|withText"
+        android:orderInCategory="1"/>
+
+    <!-- 分享菜单项 -->
+    <item
+        android:id="@+id/action_share"
+        android:title="分享"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"/>
+
+    <!-- 下一个页面 -->
+    <item
+        android:id="@+id/action_next"
+        android:title="下一页"
+        app:showAsAction="never"
+        android:orderInCategory="3"/>
+
+    <!-- 设置（显示在溢出菜单中） -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="设置"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <!-- 关于 -->
+    <item
+        android:id="@+id/action_about"
+        android:title="关于"
+        android:orderInCategory="101"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_array_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/list_item_name"
+    android:shadowColor="#000"
+    android:textSize="20sp"
+    android:padding="4dp"
+    android:shadowDx="4"
+    android:shadowDy="4"
+    android:shadowRadius="2" />

@@ -1,0 +1,18 @@
+<!-- ratingbar_states.xml - 正确写法 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <bitmap
+            android:src="@drawable/star_empty"
+            android:tileMode="repeat" />  <!-- 关键：tileMode="repeat" -->
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <bitmap
+            android:src="@drawable/star_half"
+            android:tileMode="repeat" />
+    </item>
+    <item android:id="@android:id/progress">
+        <bitmap
+            android:src="@drawable/star_filled"
+            android:tileMode="repeat" />
+    </item>
+</layer-list>

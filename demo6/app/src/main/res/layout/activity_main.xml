@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#F4F0F2"
+        android:padding="24dp">
+
+        <!-- 12小时制数字时钟 -->
+        <TextClock
+            android:id="@+id/textClock12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#0428F2"
+            android:format12Hour="hh:mm:ss a"
+            android:textStyle="bold" />
+
+        <!-- 美化模拟时钟容器 -->
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/clock1"
+            android:padding="10dp"
+            android:layout_marginBottom="30dp">
+
+            <!-- 模拟时钟 -->
+            <AnalogClock
+                android:id="@+id/analogClock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:dial="@drawable/beautiful_dial"
+                android:hand_hour="@drawable/beautiful_hour_hand"
+                android:hand_minute="@drawable/beautiful_minute_hand"
+                android:hand_second="@drawable/beautiful_second_hand"/>
+
+        </FrameLayout>
+
+        <!-- 24小时制数字时钟 -->
+        <TextClock
+            android:id="@+id/textClock24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#EF1505"
+            android:format12Hour="HH:mm:ss a"
+            android:textStyle="bold" />
+
+        <!-- 控制按钮 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnChangeFormat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="切换时间格式"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷新时间"
+                android:backgroundTint="#2196F3"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

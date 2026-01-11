@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送简单通知"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_expanded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送展开式通知"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送带操作的通知"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送进度通知"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消所有通知"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

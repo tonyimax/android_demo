@@ -1,0 +1,26 @@
+<resources>
+    <!-- 应用名称 -->
+    <string name="app_name">水果选择器</string>
+
+    <!-- 可访问性描述 -->
+    <string name="fruit_image">水果图片</string>
+    <string name="fruit_basket">水果篮图标</string>
+
+    <!-- 界面文本 -->
+    <string name="app_title">水果选择器</string>
+    <string name="select_fruit">选择您喜欢的水果</string>
+    <string name="selected_fruit">您选择了：</string>
+    <string name="no_selection">暂无选择</string>
+    <string name="choose_fruit">请选择水果</string>
+
+    <!-- 水果名称 -->
+    <string name="apple">苹果</string>
+    <string name="banana">香蕉</string>
+    <string name="orange">橙子</string>
+    <string name="strawberry">草莓</string>
+    <string name="grape">葡萄</string>
+    <string name="watermelon">西瓜</string>
+
+    <!-- Toast消息 -->
+    <string name="selected">已选择 %s</string>
+</resources>

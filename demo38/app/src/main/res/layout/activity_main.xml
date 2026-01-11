@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="#F5F5F5"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PopupWindow 示例"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btn_basic_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="基础PopupWindow"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_list_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="列表PopupWindow"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_custom_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义位置Popup"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_input_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="带输入法Popup"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_fullscreen_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="全屏背景Popup"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="操作结果将显示在这里"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginTop="32dp"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

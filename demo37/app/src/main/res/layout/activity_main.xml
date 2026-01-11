@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AlertDialog 示例"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btn_simple_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="简单对话框"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_single_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单选列表对话框"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_multi_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多选列表对话框"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_custom_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义列表对话框"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义视图对话框"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

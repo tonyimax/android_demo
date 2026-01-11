@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal"
+            tools:context=".MainActivity">
+
+            <!-- 应用标题 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RatingBar 示例"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"/>
+
+            <!-- 1. 默认 RatingBar -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 默认样式 (可点击)"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBarDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3.5"
+                android:stepSize="0.5"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="stepSize=0.5 (支持半星)"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                tools:ignore="HardcodedText" />
+
+            <!-- 2. 系统 Indicator 样式 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 系统 Indicator 样式 (不可点击)"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText" />
+
+            <RatingBar
+                android:id="@+id/ratingBarIndicator"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4.0"
+                android:layout_marginTop="5dp"/>
+
+            <!-- 3. 系统小型样式 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 系统小型样式"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText" />
+
+            <RatingBar
+                android:id="@+id/ratingBarSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="2.0"
+                android:stepSize="1.0"
+                android:layout_marginTop="5dp"/>
+
+            <!-- 4. 自定义样式 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. 自定义橙色星星"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText" />
+            <!-- 方法A：使用 style -->
+            <RatingBar
+                android:id="@+id/ratingBarCustom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="2.5"
+                android:stepSize="0.5"
+                android:layout_marginTop="5dp"/>
+
+            <!-- 方法B：直接设置属性 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. 直接设置属性"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                tools:ignore="HardcodedText" />
+
+            <RatingBar
+                android:id="@+id/ratingBarCustom"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3.0"
+                android:stepSize="1.0"
+                android:minHeight="48dp"
+                android:maxHeight="36dp"
+                android:layout_marginTop="5dp"/>
+
+            <!-- 显示区域 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="30dp"/>
+
+            <!-- 显示评分结果 -->
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前评分: 3.5"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/tvStarsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择的星星: 4"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- 按钮区域 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交评分"
+                    android:padding="12dp"
+                    android:backgroundTint="#4CAF50"/>
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重置评分"
+                    android:padding="12dp"
+                    android:backgroundTint="#F44336"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <!-- 评分说明 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评分说明：\n• 默认样式：支持半星选择\n• Indicator：只显示不可修改\n• 小型样式：紧凑显示\n• 自定义：橙色星星"
+                android:textSize="14sp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:lineSpacingExtra="6dp"
+                android:background="#F5F5F5"
+                android:padding="12dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Toast背景色 -->
+    <color name="toast_background">#E6000000</color>
+
+    <!-- 成功Toast颜色 -->
+    <color name="toast_success_bg">#4CAF50</color>
+    <color name="toast_success_text">#FFFFFF</color>
+    <color name="toast_success_icon">#FFFFFF</color>
+
+    <!-- 错误Toast颜色 -->
+    <color name="toast_error_bg">#F44336</color>
+    <color name="toast_error_text">#FFFFFF</color>
+    <color name="toast_error_icon">#FFFFFF</color>
+
+    <!-- 警告Toast颜色 -->
+    <color name="toast_warning_bg">#FF9800</color>
+    <color name="toast_warning_text">#FFFFFF</color>
+    <color name="toast_warning_icon">#FFFFFF</color>
+
+    <!-- 信息Toast颜色 -->
+    <color name="toast_info_bg">#2196F3</color>
+    <color name="toast_info_text">#FFFFFF</color>
+    <color name="toast_info_icon">#FFFFFF</color>
+
+    <!-- Toast图标颜色 -->
+    <color name="toast_icon_success">#FFFFFF</color>  <!-- 成功图标白色（在绿色背景上更清晰） -->
+    <color name="toast_icon_error">#F44336</color>    <!-- 错误图标白色（在红色背景上更清晰） -->
+    <color name="toast_icon_warning">#FFD700</color>  <!-- 警告图标金色 -->
+    <color name="toast_icon_info">#2196F3</color>     <!-- 信息图标白色（在蓝色背景上更清晰） -->
+
+    <!-- 如果想要彩色的图标在白色/浅色背景上显示，可以添加这些颜色 -->
+    <color name="color_warning">#FFA000</color>      <!-- 橙色 -->
+    <color name="color_info">#2196F3</color>         <!-- 蓝色 -->
+    <color name="color_error">#F44336</color>        <!-- 红色 -->
+    <color name="color_success">#4CAF50</color>      <!-- 绿色 -->
+</resources>
