@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 分类标题 -->
+    <PreferenceCategory app:title="通用设置">
+
+        <!-- 开关偏好 -->
+        <SwitchPreferenceCompat
+            app:key="notifications_enabled"
+            app:title="启用通知"
+            app:summary="接收应用推送通知"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <!-- 列表偏好 -->
+        <ListPreference
+            app:key="update_interval"
+            app:title="更新频率"
+            app:summary="选择数据更新间隔"
+            app:entries="@array/update_intervals"
+            app:entryValues="@array/update_interval_values"
+            app:defaultValue="3600"
+            app:iconSpaceReserved="false" />
+
+        <!-- 单选按钮偏好 -->
+        <SwitchPreferenceCompat
+            app:key="auto_sync"
+            app:title="自动同步"
+            app:summary="在WiFi下自动同步数据"
+            app:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="账户设置">
+
+        <!-- 编辑文本偏好 -->
+        <EditTextPreference
+            app:key="username"
+            app:title="用户名"
+            app:summary="设置您的显示名称"
+            app:dialogTitle="输入用户名"
+            app:dialogMessage="请输入您的用户名"
+            app:defaultValue="用户"
+            app:iconSpaceReserved="false" />
+
+        <!-- 点击打开新Fragment的偏好 -->
+        <Preference
+            app:key="advanced_settings"
+            app:title="高级设置"
+            app:summary="更多配置选项"
+            app:fragment="com.example.app.AdvancedSettingsFragment"
+            app:iconSpaceReserved="false" />
+
+        <!-- 跳转Activity的偏好 -->
+        <Preference
+            app:key="privacy_policy"
+            app:title="隐私政策"
+            app:summary="查看隐私政策详情"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="其他">
+
+        <!-- 版本信息 -->
+        <Preference
+            app:key="app_version"
+            app:title="版本信息"
+            app:summary="v1.0.0"
+            app:iconSpaceReserved="false" />
+
+        <!-- 重置设置 -->
+        <Preference
+            app:key="reset_settings"
+            app:title="重置设置"
+            app:summary="恢复默认设置"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="高级选项">
+
+        <SwitchPreferenceCompat
+            app:key="debug_mode"
+            app:title="调试模式"
+            app:summary="启用调试日志"
+            app:defaultValue="false" />
+
+        <ListPreference
+            app:key="log_level"
+            app:title="日志级别"
+            app:entries="@array/log_levels"
+            app:entryValues="@array/log_level_values"
+            app:defaultValue="INFO" />
+
+        <EditTextPreference
+            app:key="server_url"
+            app:title="服务器地址"
+            app:summary="自定义服务器URL"
+            app:dialogTitle="输入服务器地址"
+            app:defaultValue="https://api.example.com" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
