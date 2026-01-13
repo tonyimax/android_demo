@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF3E0"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="小屏幕版布局"
+        android:textSize="18sp"
+        android:textColor="#E65100"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#FFCC80"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/adaptive_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="屏幕信息"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="小屏幕设备优化布局"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这是为小屏幕手机优化的LinearLayout布局。\n\n特点：\n• 更紧凑的布局\n• 更小的字体\n• 更小的间距\n• 使用垂直滚动\n• 优化的小屏幕体验"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:lineSpacingExtra="6dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginVertical="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提示："
+                android:textSize="14sp"
+                android:textColor="#FF5722"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="小屏幕设备建议使用简洁的线性布局，避免复杂的约束关系。"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
