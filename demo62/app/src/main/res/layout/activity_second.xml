@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SecondActivity"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入要返回的数据:"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_data_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入一些文本"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择选项:"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/rb_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选项1"/>
+
+        <RadioButton
+            android:id="@+id/rb_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选项2"/>
+
+        <RadioButton
+            android:id="@+id/rb_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选项3"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交并返回数据"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_callback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过回调接口返回"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消并返回"/>
+
+</LinearLayout>
