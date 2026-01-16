@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">demo70</string>
+    <string name="start_intent">StartIntent</string>
+    <string name="tv_msg">这是通过Intent启动的第二个Activity</string>
+</resources>
